@@ -43,7 +43,7 @@ public class Bongo_SQA {
 
     }
 
-    //@Test(priority = 2)
+    @Test(priority = 2)
     public static void Register () throws InterruptedException {
         //Register_Button
         driver.findElement(By.xpath("//span[contains(text(),'Register')]")).click();
@@ -67,7 +67,7 @@ public class Bongo_SQA {
         Thread.sleep(10000);
     }
 
-    //@Test(priority = 3)
+    @Test(priority = 3)
     public static void Login () throws InterruptedException {
         //Login_Button
         driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
