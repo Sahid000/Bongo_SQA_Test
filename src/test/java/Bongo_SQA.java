@@ -43,7 +43,7 @@ public class Bongo_SQA {
 
     }
 
-    @Test(priority = 2)
+    //@Test(priority = 2)
     public static void Register () throws InterruptedException {
         //Register_Button
         driver.findElement(By.xpath("//span[contains(text(),'Register')]")).click();
