@@ -33,17 +33,18 @@ public class Bongo_SQA {
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,1250)", "");
         Thread.sleep(5000);
         //Mouse_Hover
-        WebElement element = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[3]/div/div[9]/div/div[2]/div/div/div/div/div[2]/div/div/button/a/div"));
+        WebElement element = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[3]/div/div[5]/div/div[2]/div/div/div/div/div[2]/div/div/button/a/div"));
         Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         //Free_content
-        driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[3]/div/div[9]/div/div[2]/div/div/div/div/div[2]/div/div/button/a/div")).click();
+        driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[3]/div/div[5]/div/div[2]/div/div/div/div/div[2]/div/div/button/a/div")).click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Thread.sleep(20000);
 
     }
 
-    @Test(priority = 2)
+    //@Test(priority = 2)
     public static void Register () throws InterruptedException {
         //Register_Button
         driver.findElement(By.xpath("//span[contains(text(),'Register')]")).click();
@@ -67,7 +68,7 @@ public class Bongo_SQA {
         Thread.sleep(10000);
     }
 
-    @Test(priority = 3)
+    //@Test(priority = 3)
     public static void Login () throws InterruptedException {
         //Login_Button
         driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
